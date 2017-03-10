@@ -14,6 +14,7 @@
 		070A19DC1E6FCAFA00851D03 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A19DB1E6FCAFA00851D03 /* ItemsViewController.swift */; };
 		070A19DE1E6FCBAB00851D03 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A19DD1E6FCBAB00851D03 /* Item.swift */; };
 		070A19E01E6FCDFD00851D03 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A19DF1E6FCDFD00851D03 /* ItemStore.swift */; };
+		0734577C1E7278EE00416673 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734577B1E7278EE00416673 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		070A19DB1E6FCAFA00851D03 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		070A19DD1E6FCBAB00851D03 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		070A19DF1E6FCDFD00851D03 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		0734577B1E7278EE00416673 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				070A19DB1E6FCAFA00851D03 /* ItemsViewController.swift */,
 				070A19DD1E6FCBAB00851D03 /* Item.swift */,
 				070A19DF1E6FCDFD00851D03 /* ItemStore.swift */,
+				0734577B1E7278EE00416673 /* ItemCell.swift */,
 			);
 			path = Homepwner2;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				070A19DE1E6FCBAB00851D03 /* Item.swift in Sources */,
 				070A19E01E6FCDFD00851D03 /* ItemStore.swift in Sources */,
 				070A19CA1E6FCAB500851D03 /* AppDelegate.swift in Sources */,
+				0734577C1E7278EE00416673 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +309,7 @@
 				070A19DA1E6FCAB500851D03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
