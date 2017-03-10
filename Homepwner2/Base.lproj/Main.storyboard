@@ -22,15 +22,15 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c07-Y1-iMu">
-                                    <rect key="frame" x="312" y="6" width="46" height="30"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c07-Y1-iMu">
+                                    <rect key="frame" x="191.5" y="6" width="179.5" height="30"/>
                                     <state key="normal" title="Add"/>
                                     <connections>
                                         <action selector="addNewItemWithSender:" destination="vGl-Xb-Rij" eventType="touchUpInside" id="GIm-KO-SN5"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95b-G8-h89">
-                                    <rect key="frame" x="15" y="6" width="46" height="30"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95b-G8-h89">
+                                    <rect key="frame" x="4" y="6" width="179.5" height="30"/>
                                     <state key="normal" title="Edit"/>
                                     <connections>
                                         <action selector="toggleEditingModeWithSender:" destination="vGl-Xb-Rij" eventType="touchUpInside" id="186-iO-yfk"/>
@@ -42,6 +42,7 @@
                                 <constraint firstAttribute="trailing" secondItem="c07-Y1-iMu" secondAttribute="trailing" constant="4" id="6Og-jp-CZs"/>
                                 <constraint firstItem="c07-Y1-iMu" firstAttribute="width" secondItem="95b-G8-h89" secondAttribute="width" id="6Pe-tv-S5T"/>
                                 <constraint firstItem="c07-Y1-iMu" firstAttribute="leading" secondItem="95b-G8-h89" secondAttribute="trailing" constant="8" id="hAI-9J-pNq"/>
+                                <constraint firstItem="95b-G8-h89" firstAttribute="bottom" secondItem="LW6-wm-iDf" secondAttribute="bottomMargin" id="ka2-ym-jhP"/>
                                 <constraint firstItem="c07-Y1-iMu" firstAttribute="centerY" secondItem="95b-G8-h89" secondAttribute="centerY" id="prK-lm-2nJ"/>
                                 <constraint firstItem="95b-G8-h89" firstAttribute="leading" secondItem="LW6-wm-iDf" secondAttribute="leading" constant="4" id="w7O-IP-wZH"/>
                             </constraints>
@@ -66,9 +67,8 @@
                                             <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-HO-H56">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-HO-H56">
                                             <rect key="frame" x="325" y="22" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -76,11 +76,18 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="USo-hV-a7E" firstAttribute="leading" secondItem="cXP-YJ-acY" secondAttribute="leadingMargin" id="Ig0-w7-kpc"/>
+                                        <constraint firstItem="Yzd-HO-H56" firstAttribute="centerY" secondItem="cXP-YJ-acY" secondAttribute="centerY" id="Q4C-Ns-79a"/>
                                         <constraint firstAttribute="bottom" secondItem="cCX-Ua-SpX" secondAttribute="bottom" constant="6.5" id="Z6i-lK-zlk"/>
                                         <constraint firstItem="cCX-Ua-SpX" firstAttribute="leading" secondItem="USo-hV-a7E" secondAttribute="leading" id="bhr-6z-JLU"/>
                                         <constraint firstItem="USo-hV-a7E" firstAttribute="top" secondItem="cXP-YJ-acY" secondAttribute="topMargin" id="djm-5C-Slo"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Yzd-HO-H56" secondAttribute="trailing" id="op8-32-Fw2"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="USo-hV-a7E" id="ZwO-4m-0QO"/>
+                                    <outlet property="serialNumberLabel" destination="cCX-Ua-SpX" id="v9i-Xo-bhJ"/>
+                                    <outlet property="valueLabel" destination="Yzd-HO-H56" id="xDE-XZ-SqO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
